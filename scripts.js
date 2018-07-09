@@ -1,3 +1,4 @@
+
 const main2Div = document.querySelector(".main2");
 const main3Div = document.querySelector(".main3");
 const main3Img = document.querySelector("#m3");
@@ -14,6 +15,7 @@ function fadeBackground(e) {
 }
 
 function zoomImage(e) {
+    if(window.matchMedia("(min-width: 900px)").matches) { 
     const scrollYBottom = window.scrollY + window.innerHeight; // Sidens bund placering (Y bund)
     var syb;
     var syb2;
@@ -30,6 +32,7 @@ function zoomImage(e) {
         main4Img.style.transform = 'translate3d(0, ' + (syb2 * 0.8 - 50) + 'px, 0)';
     }
 }
+}
 
 function myFunc(e) {
     fadeBackground(e);
@@ -40,3 +43,13 @@ function myFunc(e) {
 window.addEventListener('scroll', myFunc);
 
 
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " slideback";
+    } else {
+        x.className = "topnav";
+    }
+}
