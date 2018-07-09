@@ -7,55 +7,60 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="resources/css/reset.css">
   <link rel="stylesheet" href="resources/css/style.css">
-  <link rel="icon" 
-      type="image/png" 
-      href="resources/images/favicon.png">
+  <link rel="icon" type="image/png" href="resources/images/favicon.png">
   <title>Trust Food</title>
 </head>
 
 <body>
+  
 
-  <div class="navbar shad">
+  <div class="topnav mob" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="#halal">Halal Quality</a>
+    <a href="#halal">Products</a>
+    <a href="#distribution">Ditribution</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+
+  <div class="navbar">
     <div id="tr_left"></div>
     <div id="tr_right"></div>
 
-    <div class="menu normal">
-      <ul>
-        <li>
-          <div class="logo">
-            <img src="resources/images/logo.png" alt="">
-          </div>
-        </li>
-        <li class="selected">
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="">Halal &amp; Quality</a>
-        </li>
-        <li>
-          <a href="">Products</a>
-        </li>
-        <li>
-          <a href="">Distribution</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="menu">
+      <li>
+        <div class="logo">
+          <img src="resources/images/logo.png" alt="">
+        </div>
+      </li>
+      <li class="navBtn selected">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navBtn">
+        <a href="about.html">About</a>
+      </li>
+      <li class="navBtn">
+        <a href="">Halal &amp; Quality</a>
+      </li>
+      <li class="navBtn">
+        <a href="">Products</a>
+      </li>
+      <li class="navBtn">
+        <a href="">Distribution</a>
+      </li>
+      <li class="navBtn">
+        <a href="">Contact</a>
+      </li>
 
-
-
-
+    </ul>
 
   </div>
 
+      <a class="mob" href="javascript:void(0);" style="font-size:2.5rem;"  onclick="myFunction()">&#9776;</a>   
 
   <div class="main">
-    
+
     <div class="main1">
       <div class="topcolor"></div>
       <video id="bgvid" playsinline autoplay muted loop>
@@ -67,16 +72,16 @@
 
     <div class="main2">
       <h1>Quality Halal food since 1994</h1>
-      <a class="button" href="#">ABOUT US</a>
+     <div class="btns"><a class="button" href="#">ABOUT US</a> </div> 
     </div>
 
     <div class="main3">
       <div class="topText">
-          <h1>Large variety of products</h1>
-          <div class="btns">
-              <a class="button" href="#">ALAKSSA BRAND</a>
-              <a class="button" href="#">OTHER PRODUCTS</a>
-          </div>
+        <h1>Large variety of products</h1>
+        <div class="btns">
+          <a class="button" href="#">ALAKSSA BRAND</a>
+          <a class="button" href="#">OTHER PRODUCTS</a>
+        </div>
       </div>
       <img id="m3" src="resources/images/background2.jpg" alt="">
 
@@ -86,7 +91,7 @@
     <div class="main4">
       <div class="topText">
         <h1>We don't compromise with Halal</h1>
-        <a class="button" href="#">HALAL &amp; QUALITY </a>
+        <div class="btns"><a class="button" href="#">HALAL &amp; QUALITY </a></div> 
       </div>
       <img id="m4" src="resources/images/background3.jpg" alt="">
     </div>
